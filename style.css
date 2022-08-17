@@ -1,0 +1,1219 @@
+/*
+Font Familys
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* Start of Global Styling */
+
+body{
+	font-family: 'Poppins', sans-serif;
+	color: #323232;
+}
+
+section{
+	padding: 120px 0;
+
+}
+
+h1{
+	font-size: 60px;
+	text-transform: capitalize;
+	font-weight: 400;
+	line-height: 1.2em;
+	margin-bottom: 20px;
+}
+
+
+
+h2{
+	font-size: 36px;
+	margin-bottom: 20px;
+	font-weight: 400;
+
+}
+
+h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+
+h4{
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+h5{
+	font-size: 26px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+
+
+p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
+	margin-bottom: 1.5em;
+	color: #656565;
+	font-weight: 300;
+}
+
+p.title-p{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	font-weight: 300;
+	color: white;
+}
+
+.opc05{
+	opacity: 0.5;
+}
+
+.opc08{
+	opacity: 0.8;
+}
+
+.container{
+	width: 90%;
+	max-width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-slim{
+	width: 90%;
+	max-width: 670px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.section-header{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+
+.btn-red{
+	padding: 10px 30px;
+	background-color: #E4002B;
+	color: white;
+	border-radius: 4px;
+	text-transform: capitalize;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.btn-white{
+	padding: 10px 30px;
+	background-color: white;
+	color: black;
+	border-radius: 4px;
+	text-transform: capitalize;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+/* End of Global Styling */
+
+/* Start of Custome Styling*/
+
+/* Start of header styling*/
+.page-header{
+	background-color: white;
+}
+
+.page-header .flex{
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	align-items: center;
+}
+
+/*wrapper*/
+.page-header .logo{
+	width: 47px;
+
+}
+
+/*img itself*/
+.page-header .logo img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.page-header .menu-holder{
+
+}
+
+.header-nav{
+	list-style: none;
+	display: flex;
+
+}
+
+.header-nav li{
+	margin-left: 40px;
+	color: #656565;
+
+}
+
+.top-banner{
+	height: calc(100vh - 80px);
+	background-image: url(bg-main-banner.jpeg);
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top-banner .text-box{
+	width: 90%;
+	max-width: 800px;
+	text-align: center;
+	/*the rgba solution to opaccity so the letters don't fade as well*/
+	background-color: rgba(0, 0, 0, 90%);
+	padding: 50px;
+	color: white;
+	border-radius: 4px;
+}
+
+.top-banner .hours{
+	padding-top: 15px;
+}
+
+
+.about{
+ padding: 180px 0;
+}
+
+.about .container{
+	width: 600px;
+}
+
+.about .section-content{
+	text-align: center;
+}
+
+.about .hamburger-img-holder{
+	max-width: 263px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
+/*controling horizontal logo layout*/
+.about-logos{
+	margin-top: 40px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-logos li{
+	margin-right: 20px;
+	margin-left: 20px;
+	max-width: 63px;
+}
+
+.about-logos img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* Responsive design for img's - The magic */
+.about .hamburger-img-holder img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.about .section-content p.title-p{
+	color: black;
+}
+
+.selections{
+	background-image: url(bg-section-3-cards.jpeg);
+	background-position: center;
+	background-size: cover;
+	padding: 90px 0;
+}
+/*add the 'display: flex;' to the parent of the cards themselves*/
+.selections .section-content{
+	display: flex;
+	justify-content: space-between;
+
+}
+/*use the formula below to setup the card spacing*/
+.selections .section-content .card{
+	width: calc((100% - 80px) / 3 );
+	background-color: rgba(0, 0, 0, 90%);
+	border-radius: 5px;
+	padding: 70px 45px;
+}
+
+/* wrapper centering the img - The Parent*/
+.selections .card .img-holder{
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 16px;
+}
+
+/* Image with INVERSE responsive code - The Child*/
+.selections .card .img-holder img{
+	max-height: 100%;
+	width: auto;
+	display: block;
+}
+
+
+.selections .info-holder h4{
+	font-size: 16px;
+	text-transform: capitalize;
+	
+}
+
+.selections .info-holder p{
+	font-size: 14px;
+}
+
+
+.selections .info-holder{
+	text-align: center;
+	color: white;
+}
+
+
+.our-food-gallery .content-section{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.our-food-gallery .content-section .left{
+	width: calc((100% - 40px) / 2 );
+	background-image: url(https://themebubble.com/demo/webify/restaurant/wp-content/uploads/sites/10/2019/04/wzheifs9v-u.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+
+.our-food-gallery .content-section .right{
+	width: calc((100% - 40px) / 2 );
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.our-food-gallery .content-section .right .photo{
+	width: calc((100% - 40px) / 2 );
+	margin-bottom: 40px;
+	height: 240px;
+	background-position: center;
+	background-size: cover;
+
+}
+
+.our-food-gallery .content-section .right .photo:nth-child(3),
+.our-food-gallery .content-section .right .photo:nth-child(4){
+	margin-bottom: 0px;	
+}
+
+.our-food-gallery .content-section .right .photo:nth-child(1){
+	background-image: url(https://themebubble.com/demo/webify/restaurant/wp-content/uploads/sites/10/2019/04/auibtacsh6e.jpg);
+}
+
+.our-food-gallery .content-section .right .photo:nth-child(2){
+	background-image: url(https://themebubble.com/demo/webify/restaurant/wp-content/uploads/sites/10/2019/04/ki0jdrkvzvy.jpg);
+}
+
+.our-food-gallery .content-section .right .photo:nth-child(3){
+	background-image: url(https://themebubble.com/demo/webify/restaurant/wp-content/uploads/sites/10/2019/04/r18ecx07b3c.jpg);
+}
+
+.our-food-gallery .content-section .right .photo:nth-child(4){
+	background-image: url(https://themebubble.com/demo/webify/restaurant/wp-content/uploads/sites/10/2019/04/533sul11nde.jpg);
+}
+
+
+
+
+
+.todays-menu .section-header a{
+	padding: 10px 30px;
+	border: 1px solid rgba(155, 155, 155, 90%);
+	text-decoration: none;
+	text-transform: capitalize;
+	color: rgba(155, 155, 155, 90%);
+}
+
+.todays-menu .section-header a:hover{
+	padding: 10px 30px;
+	border-top: 1px solid rgba(155, 155, 155, 90%);
+	border-bottom: 1px solid rgba(155, 155, 155, 90%);
+	border-radius: 0 7% 7% 0;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+	background-color: red;
+}
+
+.todays-menu .section-header .btn-3{
+	border-radius: 0 7% 7% 0;
+}
+
+.todays-menu .section-header .btn-1{
+	border-radius: 7% 0 0 7%;
+}
+
+.todays-menu .section-header p{
+	margin-bottom: 15px;
+}
+
+.todays-menu .section-header h2{
+	margin-bottom: 40px;
+}
+
+.todays-menu .section-content{
+	border: 1px solid #EAEAEA;
+	border-radius: 7px;
+}
+
+.todays-menu .section-content .block{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: none;
+	padding: 30px;
+	border-bottom: 1px solid #EAEAEA;
+}
+
+.todays-menu .section-content .block:last-child{
+	border-bottom: none !important;
+}
+
+.todays-menu .left{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.todays-menu .food-details{
+	max-width: 600px;
+}
+
+.todays-menu .img-holder{
+	height: 100px;
+	width: 100px;
+	min-width: 100px;
+	background-position: center;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.todays-menu .food-name{
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.todays-menu .food-name h3{
+	margin-right: 10px;
+	text-transform: none;
+	margin-bottom: 0;
+}
+
+
+.todays-menu .left .cold-btn{
+	background-color: #0077b6;
+	color: white;
+	border-radius: 2px;
+	font-size: 10px;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	padding: 4px;
+}
+
+.todays-menu .right{
+	padding-left: 40px;
+}
+
+.reserve-a-table{
+	background: url(coffee-bean.jpg) rgba(0, 0, 0, 0.7);
+	background-blend-mode: multiply;
+
+	color: white;
+}
+.reserve-a-table .wrapper{
+	display: flex;
+	justify-content: space-between;
+	
+
+}
+
+.reserve-a-table .left{
+	
+	max-width: 430px;
+}
+
+
+.reserve-a-table .left h2{
+	margin-top: 30px;
+	line-height: 40px;
+}
+
+.reserve-a-table .left p{
+	margin-bottom: 40px;
+	color: white;
+	line-height: 30px;
+}
+
+.reserve-a-table .right{
+	
+	max-width: 530px;
+	flex: 1;
+}
+
+.reserve-a-table .right h2{
+	margin-bottom: 0px;
+	font-size: 40px;
+
+}
+
+.reserve-a-table .right p{
+	color: white;
+	text-transform: capitalize;
+	font-size: 14px;
+}
+
+.reserve-a-table .cards{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.reserve-a-table .cards li{
+	padding: 30px 0px;
+	border: 2px solid rgba(234, 234, 234, 0.1);
+	list-style: none;
+	text-align: center;
+	width: calc((100% - 80px) / 3 );
+	margin-bottom: 60px;
+}
+
+.reserve-a-table .cards li:hover{
+	border: rgba(234, 234, 234, 0.5);
+}
+
+
+.magicians-in-the-kitchen{
+	padding: 180px 0;
+}
+
+.magicians-in-the-kitchen .section-header{
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.magicians-in-the-kitchen .section-header h3{
+	margin-bottom: 30px;
+}
+
+.magicians-in-the-kitchen .section-header h2{
+	margin-bottom: 30px;
+}
+/*responsive img code*/
+.magicians-in-the-kitchen .section-header img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.magicians-in-the-kitchen .section-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.magicians-in-the-kitchen .section-content .card{
+	width: calc((100% - 80px) / 3 );
+}
+
+
+
+/*overlay on background img */
+.small-banner{
+	background: url(small-banner-background.jpg) rgba(0, 0, 0, 70%);
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	padding: 180px 0;
+	text-align: center;
+	color: white;
+
+}
+
+
+.small-banner h2{
+	text-transform: capitalize;
+}
+
+.small-banner p{
+	font-weight: 300;
+	line-height: 25px;
+	margin-bottom: 40px;
+	color: white;
+}
+
+/* Start of Foursquare Reviews section */
+.foursquare-reviews{
+	padding: 180px 0;
+}
+
+.foursquare-reviews .section-header{
+	text-align: center;
+}
+
+.foursquare-reviews .section-header p{
+	color: black;
+}
+
+.foursquare-reviews .section-header h2{
+	color: black;
+	text-transform: capitalize;
+}
+
+
+.foursquare-reviews .section-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.foursquare-reviews .section-content .card{
+	width: calc((100% - 80px) / 3 );
+	border: 1px solid rgba(211, 211, 211, 90%);
+	border-radius: 5px;
+}
+
+.foursquare-reviews .card .top-half{
+	border-bottom: 1px solid rgba(211, 211, 211, 90%);
+	padding: 23px 30px;
+}
+
+.foursquare-reviews .card .bottom-half{
+	padding: 20px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.foursquare-reviews .card .img-holder{
+	height: 50px;
+	width: 50px;
+	background-position: center;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.foursquare-reviews .card .name-holder{
+
+}
+
+.foursquare-reviews .card h3{
+	margin-bottom: 0px;
+	text-transform: capitalize;
+}
+
+.foursquare-reviews .card .bottom-half p{
+	margin-bottom: 0px;
+	line-height: 1;
+	text-transform: capitalize;
+}
+
+.instagram{
+	padding: 0;
+}
+
+.container-xl{
+	max-width: 1920px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.instagram .flex{
+	display: flex;
+
+}
+
+.instagram .img-wrapper{
+	width: calc(100% / 6);
+}
+
+.instagram img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.page-footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.page-footer .footer-top .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 60px 0;
+	
+}
+
+.page-footer .footer-top h3{
+	margin-bottom: 0px;
+	text-transform: none;
+	
+}
+
+.page-footer .footer-middle{
+	padding: 40px 0;
+	text-align: left;
+	border-top: 1px solid rgba(77, 77, 77, 0.5);
+	border-bottom: 1px solid rgba(77, 77, 77, 0.5);
+}
+
+.page-footer .footer-middle .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.page-footer .footer-middle .column{
+	width: calc((100% - 80px) / 4 );
+}
+
+.page-footer ul.resources li,
+.page-footer ul.product li{
+	margin-bottom: 15px;
+}
+
+
+
+.page-footer .footer-middle ul.get-social{
+	display: flex;
+	
+
+}
+
+.page-footer .footer-middle li{
+	list-style: none;
+}
+
+
+
+.page-footer .footer-middle h4{
+	font-size: 16px;
+	font-weight: 400;
+	color: white;
+	text-transform: capitalize;
+	opacity: 0.4;
+}
+
+.page-footer .footer-middle i{
+	font-size: 16px;
+	margin-right: 15px;
+}
+
+.page-footer .footer-middle a{
+	color: white;
+	text-decoration: none;
+}
+
+
+.page-footer .footer-bottom{
+	text-align: center;
+	padding: 30px 0 90px;
+}
+
+.back-to-top{
+	height: 36px;
+	width: 36px;
+	background-color: white;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 60px;
+	right: 60px;
+	border: 1px solid #EAEAEA;
+}
+
+@media only screen and (max-width: 1200px){
+	.reserve-a-table .cards li{
+		width: calc((100% - 60px) / 3 );
+		margin-bottom: 50px;
+	}
+
+	.reserve-a-table .right h2{
+		font-size: 36px;
+
+	}
+
+}
+
+@media only screen and (max-width: 992px){
+	h1{
+		font-size: 40px;
+	}
+
+	.our-food-gallery{
+		padding: 60px 0;
+	}
+
+	.our-food-gallery .content-section{
+		display: block;
+	}
+
+	.our-food-gallery .content-section .left{
+		width: 100%;
+		padding-bottom: 67%;
+		margin-bottom: 20px;
+	}
+
+	.our-food-gallery .content-section .right{
+		width: calc((100% - 0px) / 1 );
+
+	}
+
+	.our-food-gallery .content-section .right .photo{
+		width: calc((100% - 20px) / 2 );
+		margin-bottom: 20px;
+		height: auto;
+		padding-bottom: 45%;
+	}
+
+	.magicians-in-the-kitchen{
+		padding: 80px 0;
+	}
+
+
+	.magicians-in-the-kitchen .section-content{
+		flex-wrap: wrap;
+	}
+
+
+	.magicians-in-the-kitchen .section-content .card{
+		
+	}
+
+	.magicians-in-the-kitchen .card h5{
+		padding-right: 27px;
+	}
+
+
+
+	.reserve-a-table .wrapper{
+		display: block;
+	}
+
+	.reserve-a-table .left{
+		margin: 0 auto 60px;
+		max-width: 550px;
+		text-align: center;
+		
+	}
+
+	.reserve-a-table .right{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.selections .section-content .card{
+		padding: 35px 20px;
+		width: calc((100% - 30px) / 3 );
+	}
+
+	.foursquare-reviews{
+		padding: 90px 0;
+	}
+
+	.foursquare-reviews .section-content{
+		flex-wrap: wrap;
+	}
+
+	.foursquare-reviews .section-content .card{
+		width: calc((100% - 40px) / 2 );
+	}
+
+	.foursquare-reviews .section-content .card3{
+		margin-top: 40px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.foursquare-reviews .card p{
+		margin-bottom: 0px;
+	}
+
+
+}
+
+@media only screen and (max-width: 768px){
+	h5{
+		margin-bottom: 7px;
+	}
+
+	.about{
+	 padding: 90px 0;
+	}
+
+	.about .container{
+		width: 400px;
+	}
+
+	.about .section-content h2{
+		padding: 0 20px 0;
+	}
+
+	.page-header .menu-holder{
+		display: none;
+	}
+
+	.selections .section-content {
+	    flex-wrap: wrap;
+	}
+
+	.selections .section-content .card{
+		width: calc((100% - 30px) / 2 );
+
+	}
+
+	.selections .section-content .card3{
+		margin-top: 30px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+
+	.todays-menu{
+		padding: 60px 0;
+	}
+
+	.todays-menu .section-content .block{
+		display: block;
+	}
+
+	.todays-menu .right{
+		padding-left: 120px;
+	}
+
+
+	.todays-menu .right h3{
+		font-size: 24px;
+		margin-bottom: 0px;
+	}
+
+
+
+
+
+	.magicians-in-the-kitchen .section-header{
+		margin-bottom: 30px;
+	}
+
+
+	.magicians-in-the-kitchen .section-content .card{
+		width: 100%;
+		max-width: 450px;
+	}
+
+	.foursquare-reviews .section-content{
+		display: block;
+	}
+
+	.foursquare-reviews .section-content .card{
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+		width: 100%;
+		max-width: 450px;
+	}
+
+	.page-footer .footer-middle .container{
+		flex-wrap: wrap;
+	}
+
+	.page-footer .footer-middle .column{
+		width: calc((100% - 40px) / 2 );
+	}
+
+	.page-footer .footer-middle .column-1,
+	.page-footer .footer-middle .column-2{
+		margin-bottom: 15px;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 576px){
+	h1{
+		font-size: 31px;
+		
+	}
+
+	.top-banner .text-box{
+		padding: 35px 25px;
+
+	}
+
+	.about{
+	 padding: 40px 0;
+	}
+
+	.about .container{
+		width: 200px;
+	}
+
+	.about .hamburger-img-holder{
+		margin-bottom: 0px;
+	}
+
+	.about .section-content h2{
+		padding: 0 0px 0;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.selections{
+		padding: 30px 0;
+	}
+
+	.selections .section-content{
+		display: block;
+
+	}
+
+	.selections .section-content .card{
+		margin: 0px auto 10px;
+		padding: 25px 15px;
+		max-width: 300px;
+		width: 100%;
+	}
+
+	.selections .info-holder p{
+		margin-bottom: 0px;
+	}
+
+	.selections .card .img-holder{
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 16px;
+	}
+
+	.selections .card .img-holder img{
+		max-height: 100%;
+		width: auto;
+		display: block;
+	}
+
+	.our-food-gallery{
+		padding: 30px 0;
+	}
+
+	.our-food-gallery .section-header{
+		margin-bottom: 20px;
+	}
+
+	.our-food-gallery .content-section .left{
+		display: none;
+	}
+
+	.our-food-gallery .content-section .right .photo{
+		    width: 100%;
+		    margin-right: auto;
+		    margin-left: auto;
+		    margin-bottom: 0px !important;
+		    border-bottom: 1px solid white;
+	}
+
+
+
+
+
+	.todays-menu{
+		padding: 0px;
+	}
+
+	.todays-menu .section-content .block{
+		border: 1px solid #EAEAEA;
+		border-radius: 4px;
+		margin-bottom: 10px;
+		position: relative;
+		text-align: center;
+	}
+
+	.todays-menu .left .cold-btn{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+
+	.todays-menu .section-header .btn-1,
+	.todays-menu .section-header .btn-2,
+	.todays-menu .section-header .btn-3{
+		padding: 5px 10px;
+	}
+
+	.todays-menu .section-header .btn-1:hover,
+	.todays-menu .section-header .btn-2:hover,
+	.todays-menu .section-header .btn-3:hover{
+		padding: 5px 10px;
+	}
+
+	.todays-menu .section-content{
+		border: none;
+	}
+
+	.todays-menu .right{
+		padding-left: 0;
+	}
+
+	.todays-menu .left{
+		display: block;
+	}
+
+	.todays-menu .img-holder{
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 20px;
+	}
+
+	.todays-menu .food-name{
+		display: block;
+	}
+
+	.todays-menu .left .cold-btn{
+		
+	}
+
+	.magicians-in-the-kitchen{
+		padding: 0 0;
+	}
+
+	.magicians-in-the-kitchen .section-content{
+		display: block;
+	}
+
+	.magicians-in-the-kitchen .card{
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 20px;
+		width: 250px;
+		
+	}
+
+	.magicians-in-the-kitchen .card h5{
+		padding-right: 0px;
+	}
+
+	.reserve-a-table{
+		padding: 30px 0;
+	}
+
+	.reserve-a-table .cards li{
+		width: calc((100% - 30px) / 3 );
+		margin-bottom: 15px;
+		padding: 15px 0;
+	}
+
+	.reserve-a-table .right h2{
+		font-size: 25px;
+	}
+
+	.reserve-a-table .right p{
+		font-size: 12px;
+		margin-bottom: 0;
+	}
+
+	.small-banner{
+		padding: 60px 0;
+	}
+
+	.foursquare-reviews{
+		padding: 30px 0;
+	}
+
+	.page-footer .footer-top{
+		padding: 30px 0;
+	}
+
+	.page-footer .footer-top .container{
+		display: block;
+		padding: 10px 0;
+	}
+
+	.page-footer .footer-top h3{
+		padding-bottom: 40px;
+	}
+
+	.page-footer .footer-middle{
+		padding: 20px 0;
+	}
+
+	.page-footer .footer-middle .container{
+		display: block;
+	}
+	
+	.page-footer .footer-middle .column{
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		line-height: 14px;
+		margin-bottom: 0;
+
+	}
+
+	.page-footer .footer-middle .column h4{
+		display: block;
+	}
+
+	.page-footer .footer-middle ul{
+		padding-bottom: 20px;
+	}
+
+	.page-footer .footer-middle ul.get-social{
+		justify-content: center;
+	}
+
+	.page-footer .footer-bottom{
+		padding: 15px 10px 45px;
+	}
+}
+
+
+
+
+
+

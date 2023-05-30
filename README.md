@@ -1,5 +1,4 @@
-# Sandbox
-Projects to refine my coding skills
+# About Me
 
 I started my career like most, not knowing what I wanted to do but needing to pay my bills. I ended up working in insurance for years before realising there was another option.
 
